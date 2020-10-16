@@ -22,20 +22,36 @@ public class Client implements IRun {
 	@Autowired
 	ILane lane;
 
+	private String nom;
+
 	private Account account;
 
 	public Client() {
 		this.account = new Account(0, "0");
+		nom = "";
 	}
-	
+
 	public Client(Account account) {
 		this.account = account;
+		nom = "";
+	}
+
+	public Client(String nom) {
+		this.nom = nom;
 	}
 
 	private Account getAccount() {
 		return this.account;
 	}
-	
+
+	public String getNom() {
+		return nom;
+	}
+
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+
 	public void run() {
 		System.out.println("ca tourne\n");
 
@@ -50,10 +66,10 @@ public class Client implements IRun {
 		Provider p1 = new Provider();
 
 		Store s1 = new Store(b1, p1, new Account(100000, "s1"));
-		
+
 		s1.addItemToPay(a1);
-		
+
 		s1.pay(c1.getAccount());
-	
+
 	}
 }
