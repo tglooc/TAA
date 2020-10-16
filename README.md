@@ -1,4 +1,8 @@
 # TAA
 M2ILa S1
 
-Ce repertoire contient les 3 TP de TAA, situés sur les branches TP1, TP2 et TP3. Ils ne sont pas tous totalement terminés car j'ai préféré avoir un aperçu de l'ensemble des travaux.
+### Rapport du TP1
+
+- Pour ce TP j'ai décidé de ne faire que la première partie par manque de temps, pour passer à Spring assez rapidement, pensant en savoir assez sur les servlets et API.
+
+- Pour tester les fonctionnalités, il faut lancer le *maven build jetty run*, puis aller **localhost:8080** puis **/UserInfo** pour afficher les utilisateurs enregistrés, et **/MyForm** pour en ajouter  de nouveaux
